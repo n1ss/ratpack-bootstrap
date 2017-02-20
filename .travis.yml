@@ -10,13 +10,12 @@ branches:
   only:
     - master
 
-
-
 cache:
   directories:
   - $HOME/.gradle
 
 script:
+  - ./gradlew clean
   - ./gradlew check
   - ./gradlew assemble
   - ./gradlew build
